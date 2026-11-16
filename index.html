@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">HyperWare Solutions — Software Engineering &amp; Systems Development</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="HyperWare Solutions (Nejc Škerjanc, s.p.) designs and builds custom software, backend systems, integrations and cloud infrastructure for companies that need it done properly.">
+  <meta name="author" content="Nejc Škerjanc">
+  <link rel="canonical" href="https://skerjanc.org/">
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HyperWare Solutions — Software, engineered to last">
+  <meta property="og:description" content="Custom software, system architecture, integrations and cloud. Based in Slovenia, working across Europe.">
+  <meta property="og:url" content="https://skerjanc.org/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="sl_SI">
+  <meta name="theme-color" content="#f6f3ee">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Apply saved language before first paint to avoid a flash of English -->
+  <script>
+    (function () {
+      var lang = new URLSearchParams(location.search).get('lang');
+      if (lang !== 'sl' && lang !== 'en') { try { lang = localStorage.getItem('hw-lang'); } catch (e) {} }
+      if (lang === 'sl') document.documentElement.classList.add('lang-pending');
+      setTimeout(function () { document.documentElement.classList.remove('lang-pending'); }, 1500);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "HyperWare Solutions",
+    "legalName": "HyperWare Solutions, Nejc Škerjanc, s.p.",
+    "url": "https://skerjanc.org/",
+    "foundingDate": "2019",
+    "email": "info@skerjanc.org",
+    "founder": { "@type": "Person", "name": "Nejc Škerjanc", "jobTitle": "Founder & CEO", "sameAs": "https://www.linkedin.com/in/nejcskerjanc" },
+    "areaServed": "Europe",
+    "availableLanguage": ["English", "Slovenian"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Kranj", "addressCountry": "SI" },
+    "sameAs": ["https://www.linkedin.com/in/nejcskerjanc"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="HyperWare Solutions">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="7" fill="currentColor"/>
+          <path d="M9 9v14M23 9v14M9 16h14" stroke="var(--paper)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="23" cy="9" r="2.4" fill="var(--accent)"/>
+        </svg>
+        <span class="brand__name">HyperWare<span class="brand__sub">Solutions</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#approach" data-i18n="nav.approach">Approach</a>
+        <a href="#about" data-i18n="nav.about">About us</a>
+        <a class="btn btn--small" href="#contact" data-i18n="nav.cta">Start a project</a>
+      </nav>
+
+      <div class="nav__end">
+        <div class="lang" role="group" aria-label="Language / Jezik">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true" lang="en" title="English">EN</button>
+          <button type="button" class="lang__btn" data-lang="sl" aria-pressed="false" lang="sl" title="Slovenščina">SL</button>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#approach" data-i18n="nav.approach">Approach</a>
+      <a href="#about" data-i18n="nav.about">About us</a>
+      <a href="#contact" data-i18n="nav.cta">Start a project</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Software engineering studio · Slovenia</p>
+          <h1 class="hero__title reveal" data-i18n="hero.title">Software,<br><em>engineered</em> to&nbsp;last.</h1>
+          <p class="hero__lede reveal" data-i18n="hero.lede">
+            HyperWare Solutions designs and builds custom software systems —
+            from backend architecture and integrations to the applications
+            your team uses every day. Clear thinking, clean code, and systems
+            that keep working long after launch.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn" href="#contact"><span data-i18n="hero.cta">Discuss your project</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="link-arrow" href="#services" data-i18n="hero.link">See what we build</a>
+          </div>
+        </div>
+
+        <aside class="spec reveal" aria-label="Studio at a glance" data-i18n-attr="aria-label:spec.aria">
+          <dl class="spec__list">
+            <div><dt data-i18n="spec.since.k">Founded</dt><dd>2019</dd></div>
+            <div><dt data-i18n="spec.focus.k">Focus</dt><dd data-i18n="spec.focus.v">Custom software &amp; systems</dd></div>
+            <div><dt data-i18n="spec.eng.k">Engagement</dt><dd data-i18n="spec.eng.v">Project delivery<br>Long-term partnership<br>Strategic advisory</dd></div>
+            <div><dt data-i18n="spec.loc.k">Location</dt><dd data-i18n="spec.loc.v">Kranj, Slovenia, EU — remote worldwide</dd></div>
+            <div><dt data-i18n="spec.lang.k">Languages</dt><dd data-i18n="spec.lang.v">Slovenian · English</dd></div>
+          </dl>
+          <div class="spec__foot">
+            <code>$ hyperware --init your-project</code>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
+          <h2 class="section__title reveal" data-i18n="services.title">One team accountable<br>for the <em>whole</em> system.</h2>
+          <p class="section__intro reveal" data-i18n="services.intro">
+            No hand-offs between agencies and freelancers. You work directly with the
+            people who design, write and maintain your software.
+          </p>
+        </header>
+
+        <ol class="services">
+          <li class="service reveal">
+            <span class="service__num">01</span>
+            <div class="service__body">
+              <h3 data-i18n="s1.h">Custom software &amp; web applications</h3>
+              <p data-i18n="s1.p">Internal tools, client portals and business applications built around how your company actually works — not the other way round.</p>
+            </div>
+            <ul class="tags"><li data-i18n="s1.t1">Web apps</li><li data-i18n="s1.t2">Dashboards</li><li data-i18n="s1.t3">Portals</li></ul>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">02</span>
+            <div class="service__body">
+              <h3 data-i18n="s2.h">System architecture &amp; backend</h3>
+              <p data-i18n="s2.p">APIs, databases and services designed for reliability and growth. Sound foundations that make every future feature cheaper to build.</p>
+            </div>
+            <ul class="tags"><li data-i18n="s2.t1">APIs</li><li data-i18n="s2.t2">Databases</li><li data-i18n="s2.t3">Microservices</li></ul>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">03</span>
+            <div class="service__body">
+              <h3 data-i18n="s3.h">Integrations &amp; automation</h3>
+              <p data-i18n="s3.p">Connecting ERP, CRM, payment and third-party systems so data flows on its own — and your team stops copying it by hand.</p>
+            </div>
+            <ul class="tags"><li>ERP / CRM</li><li data-i18n="s3.t2">Workflows</li><li data-i18n="s3.t3">Data sync</li></ul>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">04</span>
+            <div class="service__body">
+              <h3 data-i18n="s4.h">Cloud &amp; DevOps</h3>
+              <p data-i18n="s4.p">Infrastructure, deployment pipelines and monitoring set up so releases are routine, outages are rare, and costs stay predictable.</p>
+            </div>
+            <ul class="tags"><li>CI/CD</li><li data-i18n="s4.t2">Containers</li><li data-i18n="s4.t3">Monitoring</li></ul>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">05</span>
+            <div class="service__body">
+              <h3 data-i18n="s5.h">Modernisation &amp; technical consulting</h3>
+              <p data-i18n="s5.p">Audits, refactoring and step-by-step migration of legacy systems — plus an honest second opinion before you commit to a big technical decision.</p>
+            </div>
+            <ul class="tags"><li data-i18n="s5.t1">Code audits</li><li data-i18n="s5.t2">Migration</li><li data-i18n="s5.t3">Advisory</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement">
+      <div class="wrap">
+        <p class="statement__text reveal" data-i18n="statement">
+          Good software is <em>quiet</em>. It does its job, it is easy to change,
+          and nobody has to think about it at 2&nbsp;a.m.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section" id="approach">
+      <div class="wrap">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow" data-i18n="approach.eyebrow">Approach</p>
+            <h2 class="section__title reveal" data-i18n="approach.title">A clear path from<br>idea to <em>running</em> system.</h2>
+          </div>
+          <p class="section__intro reveal" data-i18n="approach.intro">
+            Every project follows the same disciplined rhythm. You always know what
+            is being built, why, and what comes next.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__label"><span data-i18n="phase">Phase</span> 01</span>
+            <h3 data-i18n="p1.h">Discover</h3>
+            <p data-i18n="p1.p">We map your goals, constraints and existing systems. You get a written scope and an honest estimate.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__label"><span data-i18n="phase">Phase</span> 02</span>
+            <h3 data-i18n="p2.h">Design</h3>
+            <p data-i18n="p2.p">Architecture, data model and interfaces are defined up front — decisions documented, risks surfaced early.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__label"><span data-i18n="phase">Phase</span> 03</span>
+            <h3 data-i18n="p3.h">Build</h3>
+            <p data-i18n="p3.p">Short iterations with working demos. Tested, reviewed code you can see progressing every week.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__label"><span data-i18n="phase">Phase</span> 04</span>
+            <h3 data-i18n="p4.h">Run</h3>
+            <p data-i18n="p4.p">Deployment, documentation and handover — or ongoing support and development on a monthly retainer.</p>
+          </li>
+        </ol>
+
+        <div class="principles">
+          <div class="principle reveal">
+            <h3 data-i18n="pr1.h">Direct communication</h3>
+            <p data-i18n="pr1.p">You talk to the engineers building your system, not a chain of account managers. Questions get answered by the people who know the code.</p>
+          </div>
+          <div class="principle reveal">
+            <h3 data-i18n="pr2.h">You own everything</h3>
+            <p data-i18n="pr2.p">Source code, infrastructure and documentation are yours. No lock-in, no hidden dependencies.</p>
+          </div>
+          <div class="principle reveal">
+            <h3 data-i18n="pr3.h">Built for the long run</h3>
+            <p data-i18n="pr3.p">Readable code, automated tests and sensible technology choices — so the system stays maintainable for years.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="stack" aria-label="Technologies" data-i18n-attr="aria-label:stack.aria">
+      <div class="wrap stack__inner">
+        <p class="stack__label" data-i18n="stack.label">Working with</p>
+        <ul class="stack__list">
+          <li>C# / .NET</li><li>TypeScript</li><li>Python</li><li>Node.js</li>
+          <li>React</li><li>SQL</li><li>Docker</li>
+          <li>Azure</li><li>AWS</li><li>REST &amp; GraphQL</li><li>Git &amp; CI/CD</li>
+          <li>Solidity</li><li>Rust</li><li>Go</li><li>Ethereum / EVM</li><li>Web3 &amp; ethers.js</li><li>Hardhat &amp; Foundry</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <figure class="portrait reveal">
+          <!-- Replace this placeholder with: <img src="assets/nejc.jpg" alt="Nejc Škerjanc" width="800" height="1000"> -->
+          <div class="portrait__placeholder" aria-hidden="true">
+            <span>NŠ</span>
+          </div>
+          <figcaption>
+            <strong>Nejc Škerjanc</strong>
+            <span data-i18n="about.role">Founder &amp; CEO</span>
+          </figcaption>
+        </figure>
+
+        <div class="about__copy">
+          <p class="eyebrow" data-i18n="about.eyebrow">About us</p>
+          <h2 class="section__title reveal" data-i18n="about.title">People who take <em>ownership</em>.</h2>
+          <div class="prose reveal">
+            <p data-i18n="about.p1">
+              Founded by Nejc Škerjanc in 2019, HyperWare Solutions offers companies
+              something surprisingly hard to find: an experienced engineering team that
+              takes full responsibility for a system — from the first conversation to
+              years of reliable operation.
+            </p>
+            <p data-i18n="about.p2">
+              Our work sits where business processes meet technology. We build the
+              software that runs operations, connect the systems that don't talk to
+              each other, and bring order to codebases that have grown out of control.
+            </p>
+            <p data-i18n="about.p3">
+              We care about doing things properly: clear architecture, honest
+              estimates, and code that the next developer will thank you for.
+            </p>
+          </div>
+          <a class="linkedin reveal" href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.82 2.67 4.82 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
+            <span data-i18n="about.linkedin">Connect with Nejc on LinkedIn</span>
+            <svg class="ext" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7m-5 0h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light" data-i18n="contact.eyebrow">Contact</p>
+          <h2 class="contact__title reveal" data-i18n="contact.title">Have a system<br>in mind? <em>Let's talk.</em></h2>
+          <p class="contact__lede reveal" data-i18n="contact.lede">
+            Tell us briefly what you need. We'll get back to you with questions,
+            ideas, or a proposal for a short introductory call.
+          </p>
+
+          <ul class="contact__direct reveal">
+            <li>
+              <span class="contact__k" data-i18n="contact.email">Email</span>
+              <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
+            </li>
+            <li>
+              <span class="contact__k">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">in/nejcskerjanc</a>
+            </li>
+            <li>
+              <span class="contact__k" data-i18n="contact.based.k">Based in</span>
+              <span data-i18n="contact.based.v">Kranj, Slovenia, EU</span>
+            </li>
+          </ul>
+        </div>
+
+        <!--
+          Contact form is powered by Web3Forms (free, works on static GitHub Pages).
+          1. Go to https://web3forms.com, enter info@skerjanc.org, get your Access Key by email.
+          2. Paste it into the "access_key" value below.
+        -->
+        <form class="form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New enquiry from skerjanc.org">
+          <input type="hidden" name="from_name" value="skerjanc.org">
+          <input type="hidden" name="language" value="en">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email" data-i18n="form.email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-company" data-i18n="form.company">Company <span class="opt">optional</span></label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-type" data-i18n="form.type">Project type</label>
+              <select id="f-type" name="project_type">
+                <option data-i18n="form.type1">New software / application</option>
+                <option data-i18n="form.type2">Integration or automation</option>
+                <option data-i18n="form.type3">Existing system — improve or modernise</option>
+                <option data-i18n="form.type4">Consulting / technical review</option>
+                <option data-i18n="form.type5">Something else</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-msg" data-i18n="form.msg">About the project</label>
+            <textarea id="f-msg" name="message" rows="5" required placeholder="What are you trying to achieve, and by when?" data-i18n-attr="placeholder:form.msg.ph"></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span data-i18n="form.consent">I agree that my details are used only to respond to this enquiry.</span>
+          </label>
+
+          <div class="form__foot">
+            <button class="btn btn--accent" type="submit">
+              <span class="btn__label" data-i18n="form.send">Send message</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <strong>HyperWare Solutions</strong>
+        <span>Nejc Škerjanc, s.p.</span>
+        <span data-i18n="footer.est">Est. 2019</span>
+        <!-- Add when ready:  <span>Matična št.: XXXXXXX · ID za DDV: SIXXXXXXXX</span> -->
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
+        <a href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#top" data-i18n="footer.top">Back to top ↑</a>
+      </nav>
+      <p class="footer__copy">© 2019–<span id="year">2026</span> HyperWare Solutions. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
