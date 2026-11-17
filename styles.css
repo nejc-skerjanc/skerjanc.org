@@ -319,7 +319,7 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
   background: var(--ink);
   color: var(--on-dark);
   border-radius: var(--radius);
-  padding: 26px 26px 22px;
+  padding: 26px;
   font-size: 14.5px;
   box-shadow: 0 40px 80px -40px oklch(0.2 0.02 262 / 0.55);
 }
@@ -344,6 +344,7 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 }
 .spec__list { margin: 0; }
 .spec__list > div:first-child { padding-top: 0; }
+.spec__list > div:last-child { border-bottom: 0; padding-bottom: 0; }
 .spec__list > div {
   display: grid;
   grid-template-columns: 104px 1fr;

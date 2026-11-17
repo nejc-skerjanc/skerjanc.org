@@ -42,8 +42,6 @@ const STRINGS = {
     'spec.eng.v': 'Celovita izvedba projektov<br>Dolgoročno partnerstvo<br>Strateško svetovanje',
     'spec.loc.k': 'Sedež',
     'spec.loc.v': 'Kranj, Slovenija, EU — storitve tudi na daljavo',
-    'spec.lang.k': 'Jeziki',
-    'spec.lang.v': 'Slovenščina · Angleščina',
 
     'services.eyebrow': 'Storitve',
     'services.title': 'En izvajalec,<br>odgovoren za <em>celoten</em> sistem.',
