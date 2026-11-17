@@ -8,11 +8,12 @@ const STRINGS = {
   en: {
     'menu.open': 'Open menu',
     'menu.close': 'Close menu',
-    'form.sending': 'Sending…',
-    'form.err.fields': 'Please fill in the highlighted fields.',
-    'form.err.setup': 'Form not connected yet — please email info@skerjanc.org.',
-    'form.ok': 'Thank you — your message is on its way. We will be in touch soon.',
-    'form.err.send': 'Something went wrong. Please email info@skerjanc.org directly.',
+    'form.send': 'Submit enquiry',
+    'form.sending': 'Submitting…',
+    'form.err.fields': 'Please complete the highlighted fields.',
+    'form.err.setup': 'The form is currently unavailable. Please contact us at info@skerjanc.org.',
+    'form.ok': 'Thank you for your enquiry. We will respond as soon as possible.',
+    'form.err.send': 'An error occurred while submitting. Please contact us directly at info@skerjanc.org.',
   },
 
   sl: {
