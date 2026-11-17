@@ -597,8 +597,8 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 .prose p { color: var(--ink-soft); font-size: clamp(17px, 1.35vw, 19px); }
 .prose p:first-child { color: var(--ink); }
 
+.about__links { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px; }
 .linkedin {
-  margin-top: 40px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -611,6 +611,7 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
   transition: border-color 0.25s, background-color 0.25s;
 }
 .linkedin svg { width: 20px; height: 20px; color: oklch(0.5 0.13 250); }
+.linkedin[href^="mailto"] svg { color: var(--accent-ink); }
 .linkedin .ext { width: 16px; height: 16px; color: var(--ink-faint); transition: transform 0.3s var(--ease-out); }
 .linkedin:hover { border-color: var(--ink); background: var(--paper-2); }
 .linkedin:hover .ext { transform: translate(2px, -2px); }

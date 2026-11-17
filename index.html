@@ -50,7 +50,7 @@
     "url": "https://skerjanc.org/",
     "foundingDate": "2019",
     "email": "info@skerjanc.org",
-    "founder": { "@type": "Person", "name": "Nejc Škerjanc", "jobTitle": "Founder & CEO", "sameAs": "https://www.linkedin.com/in/nejcskerjanc" },
+    "founder": { "@type": "Person", "name": "Nejc Škerjanc", "jobTitle": "Founder & CEO", "email": "nejc@skerjanc.org", "sameAs": "https://www.linkedin.com/in/nejcskerjanc" },
     "areaServed": "Europe",
     "availableLanguage": ["English", "Slovenian"],
     "address": { "@type": "PostalAddress", "addressLocality": "Kranj", "addressCountry": "SI" },
@@ -347,11 +347,17 @@
             <p data-i18n="about.p2">We operate at the intersection of business processes and technology. We develop software that supports business operations, integrate disconnected systems, and bring structure to existing software solutions.</p>
             <p data-i18n="about.p3">We are committed to high-quality delivery: clear architecture, realistic estimates and well-structured code that facilitates future development.</p>
           </div>
-          <a class="linkedin reveal" href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">
+          <div class="about__links reveal">
+          <a class="linkedin" href="mailto:nejc@skerjanc.org">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z M3.5 7l8.5 6.5L20.5 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>nejc@skerjanc.org</span>
+          </a>
+          <a class="linkedin" href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.82 2.67 4.82 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
             <span data-i18n="about.linkedin">Nejc Škerjanc on LinkedIn</span>
             <svg class="ext" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7m-5 0h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
+          </div>
         </div>
       </div>
     </section>
@@ -366,8 +372,12 @@
 
           <ul class="contact__direct reveal">
             <li>
-              <span class="contact__k" data-i18n="contact.email">Email</span>
+              <span class="contact__k" data-i18n="contact.email">General</span>
               <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
+            </li>
+            <li>
+              <span class="contact__k" data-i18n="contact.ceo">Founder &amp; CEO</span>
+              <a href="mailto:nejc@skerjanc.org">nejc@skerjanc.org</a>
             </li>
             <li>
               <span class="contact__k">LinkedIn</span>
@@ -452,6 +462,7 @@
       </div>
       <nav class="footer__links" aria-label="Footer">
         <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
+        <a href="mailto:nejc@skerjanc.org">nejc@skerjanc.org</a>
         <a href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">LinkedIn</a>
         <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>
         <a href="#top" data-i18n="footer.top">Back to top ↑</a>

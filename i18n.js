@@ -134,7 +134,8 @@ const STRINGS = {
     'contact.eyebrow': 'Kontakt',
     'contact.title': 'Načrtujete nov<br>sistem? <em>Pišite nam.</em>',
     'contact.lede': 'Na kratko opišite svoje potrebe. Odgovorili vam bomo z dodatnimi vprašanji, predlogi ali povabilom na uvodni sestanek.',
-    'contact.email': 'E-pošta',
+    'contact.email': 'Splošno',
+    'contact.ceo': 'Ustanovitelj in direktor',
     'contact.based.k': 'Sedež',
     'contact.based.v': 'Kranj, Slovenija, EU',
 
