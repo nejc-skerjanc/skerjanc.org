@@ -535,6 +535,8 @@ em {
 }
 
 .portrait { margin: 0; position: sticky; top: 104px; }
+.portrait picture { display: block; }
+.portrait img { height: auto; background: var(--ink); box-shadow: 0 40px 80px -48px oklch(0.2 0.02 262 / 0.6); }
 .portrait img,
 .portrait__placeholder {
   width: 100%;

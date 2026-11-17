@@ -266,51 +266,10 @@
     <section class="section" id="about">
       <div class="wrap about">
         <figure class="portrait reveal">
-          <!-- Replace this placeholder with: <img src="assets/nejc.jpg" alt="Nejc Škerjanc" width="800" height="1000"> -->
-          <div class="portrait__placeholder" aria-hidden="true">
-            <svg class="portrait__art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMax slice">
-              <defs>
-                <pattern id="pt-dots" width="16" height="16" patternUnits="userSpaceOnUse">
-                  <circle cx="2" cy="2" r="1" fill="#f6f3ee" opacity="0.07"/>
-                </pattern>
-                <linearGradient id="pt-head" x1="0.2" y1="0" x2="0.8" y2="1">
-                  <stop offset="0" stop-color="#55607a"/>
-                  <stop offset="1" stop-color="#323a4d"/>
-                </linearGradient>
-                <linearGradient id="pt-body" x1="0.15" y1="0" x2="0.85" y2="1">
-                  <stop offset="0" stop-color="#3a4357"/>
-                  <stop offset="1" stop-color="#232a39"/>
-                </linearGradient>
-                <radialGradient id="pt-glow" cx="0.5" cy="0.36" r="0.5">
-                  <stop offset="0" stop-color="#e07a3a" stop-opacity="0.22"/>
-                  <stop offset="1" stop-color="#e07a3a" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-
-              <rect width="400" height="500" fill="url(#pt-dots)"/>
-              <circle cx="200" cy="230" r="190" fill="url(#pt-glow)"/>
-              <circle cx="200" cy="250" r="158" fill="none" stroke="#e07a3a" stroke-width="1.25" opacity="0.4"/>
-              <circle cx="200" cy="250" r="190" fill="none" stroke="#e07a3a" stroke-width="1" stroke-dasharray="2 7" opacity="0.25"/>
-
-              <!-- neck -->
-              <path d="M178 250h44v44c-14 8-30 8-44 0z" fill="#2c3445"/>
-              <!-- shoulders / jacket -->
-              <path d="M30 500C38 392 96 330 200 312c104 18 162 80 170 188z" fill="url(#pt-body)"/>
-              <!-- shirt -->
-              <path d="M170 300l30 82 30-82c-10-6-20-9-30-9s-20 3-30 9z" fill="#ece7df"/>
-              <!-- lapels -->
-              <path d="M170 300c-22 8-40 18-52 30l26 54-14 14 64 102 6-118z" fill="#1d2330"/>
-              <path d="M230 300c22 8 40 18 52 30l-26 54 14 14-64 102-6-118z" fill="#1d2330"/>
-              <path d="M200 382v118" stroke="#151a25" stroke-width="2"/>
-              <!-- pocket square -->
-              <path d="M98 418l30-6 3 7-31 6z" fill="#e07a3a"/>
-              <!-- head + hair -->
-              <ellipse cx="200" cy="206" rx="56" ry="66" fill="url(#pt-head)"/>
-              <path d="M145 200c-6-48 20-74 57-74 36 0 60 24 54 70-6-22-24-36-50-36-10 0-18 2-24 6-14 6-28 18-37 34z" fill="#1b212d"/>
-              <ellipse cx="145" cy="214" rx="7" ry="12" fill="#3a4357"/>
-              <ellipse cx="255" cy="214" rx="7" ry="12" fill="#3a4357"/>
-            </svg>
-          </div>
+          <picture>
+            <source srcset="assets/nejc.webp" type="image/webp">
+            <img src="assets/nejc.jpg" alt="Nejc Škerjanc, Founder &amp; CEO of HyperWare Solutions" width="673" height="842" loading="lazy" decoding="async">
+          </picture>
           <figcaption>
             <strong>Nejc Škerjanc</strong>
             <span data-i18n="about.role">Founder &amp; CEO</span>
