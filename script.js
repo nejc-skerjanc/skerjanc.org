@@ -65,11 +65,29 @@ const setStatus = (msg, kind = '') => {
   status.className = 'form__status' + (kind ? ` is-${kind}` : '');
 };
 
+// Anti-robot measures: a simple arithmetic question, a hidden honeypot field
+// (botcheck) and a minimum time between page load and submission.
+const checkInput = document.getElementById('f-check');
+const checkQ = document.getElementById('check-q');
+const loadedAt = Date.now();
+let check = { a: 0, b: 0 };
+const newCheck = () => {
+  check = { a: 2 + Math.floor(Math.random() * 8), b: 1 + Math.floor(Math.random() * 9) };
+  renderCheck();
+};
+const renderCheck = () => {
+  checkQ.textContent = HW.t('form.check.q').replace('{a}', check.a).replace('{b}', check.b);
+};
+newCheck();
+document.addEventListener('langchange', renderCheck);
+
 const validate = () => {
   let ok = true;
   form.querySelectorAll('[required]').forEach((input) => {
     const wrapper = input.closest('.field, .consent');
-    const valid = input.type === 'checkbox' ? input.checked : input.checkValidity() && input.value.trim() !== '';
+    const valid = input === checkInput
+      ? Number(input.value.trim()) === check.a + check.b && input.value.trim() !== ''
+      : input.type === 'checkbox' ? input.checked : input.checkValidity() && input.value.trim() !== '';
     wrapper.classList.toggle('is-invalid', !valid);
     if (!valid) ok = false;
   });
@@ -83,7 +101,20 @@ form.addEventListener('input', (e) => {
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  // Silently stop obvious bots: honeypot filled, or submitted within 3 seconds of loading
+  if (form.querySelector('[name="botcheck"]').checked || Date.now() - loadedAt < 3000) {
+    setStatus(HW.t('form.err.send'), 'err');
+    return;
+  }
   if (!validate()) {
+    const onlyCheck = form.querySelectorAll('.is-invalid').length === 1 && checkInput.closest('.is-invalid');
+    if (onlyCheck) {
+      setStatus(HW.t('form.err.check'), 'err');
+      checkInput.value = '';
+      newCheck();
+      checkInput.focus();
+      return;
+    }
     setStatus(HW.t('form.err.fields'), 'err');
     form.querySelector('.is-invalid input, .is-invalid textarea')?.focus();
     return;
@@ -108,6 +139,7 @@ form.addEventListener('submit', async (e) => {
     const data = await res.json();
     if (!res.ok || !data.success) throw new Error(data.message || 'Request failed');
     form.reset();
+    newCheck();
     setStatus(HW.t('form.ok'), 'ok');
   } catch {
     setStatus(HW.t('form.err.send'), 'err');

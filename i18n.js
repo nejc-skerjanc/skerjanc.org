@@ -14,6 +14,8 @@ const STRINGS = {
     'form.err.setup': 'The form is currently unavailable. Please contact us at info@skerjanc.org.',
     'form.ok': 'Thank you for your enquiry. We will respond as soon as possible.',
     'form.err.send': 'An error occurred while submitting. Please contact us directly at info@skerjanc.org.',
+    'form.check.q': 'What is {a} + {b}?',
+    'form.err.check': 'The answer to the security question is incorrect. Please try again with the new question.',
   },
 
   sl: {
@@ -157,6 +159,10 @@ const STRINGS = {
     'form.err.setup': 'Obrazec trenutno ni na voljo. Prosimo, pišite na info@skerjanc.org.',
     'form.ok': 'Zahvaljujemo se vam za povpraševanje. Odgovorili vam bomo v najkrajšem možnem času.',
     'form.err.send': 'Pri pošiljanju je prišlo do napake. Prosimo, pišite neposredno na info@skerjanc.org.',
+    'form.check': 'Varnostno vprašanje',
+    'form.check.q': 'Koliko je {a} + {b}?',
+    'form.check.help': 'Prosimo, odgovorite, da potrdite, da niste avtomatiziran program.',
+    'form.err.check': 'Odgovor na varnostno vprašanje ni pravilen. Prosimo, poskusite znova z novim vprašanjem.',
 
     'footer.est': 'Ustanovljeno leta 2019',
     'footer.privacy': 'Politika zasebnosti',

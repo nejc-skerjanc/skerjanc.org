@@ -717,6 +717,9 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 .field.is-invalid input,
 .field.is-invalid textarea { border-color: oklch(0.68 0.19 25); }
 
+.field--check input { max-width: 140px; }
+.field__help { font-size: 13px; color: oklch(0.6 0.014 262); }
+
 .consent {
   display: flex;
   gap: 12px;

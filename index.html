@@ -435,6 +435,12 @@
             <textarea id="f-msg" name="message" rows="5" required placeholder="Please describe the project objectives and desired timeline." data-i18n-attr="placeholder:form.msg.ph"></textarea>
           </div>
 
+          <div class="field field--check">
+            <label for="f-check"><span data-i18n="form.check">Security question</span> — <span id="check-q">What is 4 + 7?</span></label>
+            <input id="f-check" type="text" inputmode="numeric" autocomplete="off" maxlength="3" required aria-describedby="check-help">
+            <small id="check-help" class="field__help" data-i18n="form.check.help">Please answer to confirm you are not an automated program.</small>
+          </div>
+
           <label class="consent">
             <input type="checkbox" name="consent" required>
             <span data-i18n="form.consent">I consent to the processing of my personal data solely for the purpose of responding to this enquiry, in accordance with the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>.</span>
