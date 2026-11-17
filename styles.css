@@ -310,6 +310,10 @@ em {
   gap: 28px;
 }
 
+/* Slovenian headlines run longer — scale them down a touch */
+html[lang="sl"] .hero__title { font-size: clamp(46px, 6.6vw, 98px); line-height: 0.98; }
+html[lang="sl"] .statement__text { max-width: 24ch; }
+
 /* Spec sheet */
 .spec {
   background: var(--ink);
