@@ -15,13 +15,19 @@
   <meta property="og:url" content="https://skerjanc.org/">
   <meta property="og:locale" content="en_GB">
   <meta property="og:locale:alternate" content="sl_SI">
+  <meta property="og:site_name" content="HyperWare Solutions">
+  <meta property="og:image" content="https://skerjanc.org/assets/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="HyperWare Solutions — Software, engineered to last">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#f6f3ee">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -68,6 +74,7 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#industries" data-i18n="nav.industries">Industries</a>
         <a href="#approach" data-i18n="nav.approach">Approach</a>
         <a href="#about" data-i18n="nav.about">About us</a>
         <a class="btn btn--small" href="#contact" data-i18n="nav.cta">Contact us</a>
@@ -85,6 +92,7 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#industries" data-i18n="nav.industries">Industries</a>
       <a href="#approach" data-i18n="nav.approach">Approach</a>
       <a href="#about" data-i18n="nav.about">About us</a>
       <a href="#contact" data-i18n="nav.cta">Contact us</a>
@@ -116,6 +124,30 @@
             <div><dt data-i18n="spec.loc.k">Headquarters</dt><dd data-i18n="spec.loc.v">Kranj, Slovenia, EU — remote services available</dd></div>
           </dl>
         </aside>
+      </div>
+    </section>
+
+    <!-- ============ KEY FIGURES ============ -->
+    <section class="figures" aria-label="Key figures" data-i18n-attr="aria-label:fig.aria">
+      <div class="wrap">
+        <dl class="figures__grid">
+          <div class="figure reveal">
+            <dt data-i18n="fig.years">Years in business</dt>
+            <dd><span id="years-count">7</span><span class="figure__unit">+</span></dd>
+          </div>
+          <div class="figure reveal">
+            <dt data-i18n="fig.services">Core service areas</dt>
+            <dd>5</dd>
+          </div>
+          <div class="figure reveal">
+            <dt data-i18n="fig.industries">Industries served</dt>
+            <dd>6</dd>
+          </div>
+          <div class="figure reveal">
+            <dt data-i18n="fig.ownership">Client ownership of source code</dt>
+            <dd>100<span class="figure__unit">%</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -170,6 +202,55 @@
             <ul class="tags"><li data-i18n="s5.t1">Code audits</li><li data-i18n="s5.t2">Migration</li><li data-i18n="s5.t3">Advisory</li></ul>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <!-- ============ INDUSTRIES ============ -->
+    <section class="section" id="industries">
+      <div class="wrap">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow" data-i18n="ind.eyebrow">Industries</p>
+            <h2 class="section__title reveal" data-i18n="ind.title">Experience across<br><em>demanding</em> industries.</h2>
+          </div>
+          <p class="section__intro reveal" data-i18n="ind.intro">
+            We understand the specific requirements, regulations and risks of the
+            sectors in which our clients operate.
+          </p>
+        </header>
+
+        <ul class="industries">
+          <li class="industry reveal">
+            <span class="industry__num">01</span>
+            <h3 data-i18n="i1.h">E-commerce</h3>
+            <p data-i18n="i1.p">Online stores, order management and integration with ERP, payment and logistics systems.</p>
+          </li>
+          <li class="industry reveal">
+            <span class="industry__num">02</span>
+            <h3 data-i18n="i2.h">Crypto &amp; blockchain</h3>
+            <p data-i18n="i2.p">Smart contracts, wallet integration and blockchain-based payment solutions.</p>
+          </li>
+          <li class="industry reveal">
+            <span class="industry__num">03</span>
+            <h3 data-i18n="i3.h">Fintech</h3>
+            <p data-i18n="i3.p">Secure transaction processing, financial system integration and reporting solutions.</p>
+          </li>
+          <li class="industry reveal">
+            <span class="industry__num">04</span>
+            <h3 data-i18n="i4.h">Healthcare</h3>
+            <p data-i18n="i4.p">Systems handling sensitive data, with an emphasis on security, reliability and data protection.</p>
+          </li>
+          <li class="industry reveal">
+            <span class="industry__num">05</span>
+            <h3 data-i18n="i5.h">Embedded systems</h3>
+            <p data-i18n="i5.p">Software for devices and controllers, and their integration with cloud and business systems.</p>
+          </li>
+          <li class="industry reveal">
+            <span class="industry__num">06</span>
+            <h3 data-i18n="i6.h">Websites &amp; web platforms</h3>
+            <p data-i18n="i6.p">Corporate websites and web platforms built for performance, security and maintainability.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -346,7 +427,7 @@
 
           <label class="consent">
             <input type="checkbox" name="consent" required>
-            <span data-i18n="form.consent">I consent to the processing of my personal data solely for the purpose of responding to this enquiry.</span>
+            <span data-i18n="form.consent">I consent to the processing of my personal data solely for the purpose of responding to this enquiry, in accordance with the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>.</span>
           </label>
 
           <div class="form__foot">
@@ -372,6 +453,7 @@
       <nav class="footer__links" aria-label="Footer">
         <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
         <a href="https://www.linkedin.com/in/nejcskerjanc" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>
         <a href="#top" data-i18n="footer.top">Back to top ↑</a>
       </nav>
       <p class="footer__copy">© 2019–<span id="year">2026</span> HyperWare Solutions. <span data-i18n="footer.rights">All rights reserved.</span></p>

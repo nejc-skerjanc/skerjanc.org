@@ -745,6 +745,134 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
+/* ---------- Key figures ---------- */
+
+.figures { border-top: 1px solid var(--rule); }
+.figures__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+}
+.figure {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 14px;
+  padding: clamp(36px, 4.5vw, 56px) 28px;
+  border-left: 1px solid var(--rule);
+}
+.figure:first-child { border-left: 0; padding-left: 0; }
+.figure dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(52px, 6vw, 88px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+.figure__unit { color: var(--accent-ink); }
+.figure dt {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  max-width: 22ch;
+}
+
+/* ---------- Industries ---------- */
+
+.industries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+.industry {
+  background: var(--paper);
+  padding: 32px 28px 40px;
+  transition: background-color 0.35s var(--ease-out);
+}
+.industry:hover { background: var(--paper-2); }
+.industry__num {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent-ink);
+}
+.industry h3 {
+  margin-top: 28px;
+  font-family: var(--serif);
+  font-size: clamp(28px, 2.6vw, 36px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.industry p { margin-top: 12px; color: var(--ink-soft); font-size: 16px; max-width: 40ch; }
+
+/* ---------- Legal / 404 pages ---------- */
+
+.page { padding-block: clamp(64px, 9vw, 120px) var(--section-y); }
+.legal { max-width: 74ch; }
+.legal h1 {
+  font-family: var(--serif);
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.legal .updated {
+  margin-top: 20px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+.legal h2 {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--serif);
+  font-size: clamp(26px, 2.6vw, 34px);
+  line-height: 1.1;
+}
+.legal p, .legal li { color: var(--ink-soft); }
+.legal p { margin-top: 16px; }
+.legal ul { margin-top: 14px; padding-left: 1.2em; list-style: disc; display: grid; gap: 8px; }
+.legal li::marker { color: var(--accent-ink); }
+.legal strong { color: var(--ink); font-weight: 600; }
+.legal a { color: var(--accent-ink); text-underline-offset: 3px; }
+.legal .lead { margin-top: 36px; font-size: clamp(17px, 1.4vw, 19px); color: var(--ink); }
+
+.back-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--ink-soft);
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--ink); }
+
+.notfound { min-height: 62vh; display: grid; align-content: center; }
+.notfound__code {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--accent-ink);
+}
+.notfound h1 {
+  margin-top: 20px;
+  font-family: var(--serif);
+  font-size: clamp(52px, 8vw, 112px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+.notfound h1 em { color: var(--accent-ink); }
+.notfound p { margin-top: 24px; max-width: 46ch; color: var(--ink-soft); font-size: 18px; }
+.notfound .btn { margin-top: 36px; }
+
+/* Show only the block matching the current language */
+html[lang="sl"] [data-only="en"],
+html:not([lang="sl"]) [data-only="sl"] { display: none; }
+
+.consent a { color: var(--accent); text-underline-offset: 3px; }
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -787,6 +915,7 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1024px) {
+  .industries { grid-template-columns: repeat(2, 1fr); }
   .service { grid-template-columns: 56px minmax(0, 1fr); }
   .tags { grid-column: 2; justify-content: flex-start; padding-top: 0; }
   .steps { grid-template-columns: repeat(2, 1fr); }
@@ -796,6 +925,9 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 }
 
 @media (max-width: 860px) {
+  .figures__grid { grid-template-columns: repeat(2, 1fr); }
+  .figure:nth-child(3) { border-left: 0; padding-left: 0; }
+  .figure:nth-child(n+3) { border-top: 1px solid var(--rule); }
   .nav__links { display: none; }
   .nav__toggle { display: block; }
 
@@ -812,6 +944,10 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 }
 
 @media (max-width: 560px) {
+  .industries { grid-template-columns: 1fr; }
+  .industry { padding-inline: 0; }
+  .figure { padding: 28px 16px; }
+  .figure:nth-child(odd) { padding-left: 0; }
   body { font-size: 16px; }
   .service { grid-template-columns: 1fr; gap: 12px; padding: 28px 0; }
   .service__num { padding-top: 0; }

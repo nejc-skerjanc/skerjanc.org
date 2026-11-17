@@ -2,6 +2,8 @@ document.documentElement.classList.add('js');
 
 // Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
+const yearsCount = document.getElementById('years-count');
+if (yearsCount) yearsCount.textContent = new Date().getFullYear() - 2019;
 
 // Sticky nav border on scroll
 const nav = document.querySelector('.nav');

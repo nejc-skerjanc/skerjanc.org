@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="nf.title">Page not found — HyperWare Solutions</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f6f3ee">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+    (function () {
+      var lang = null;
+      try { lang = localStorage.getItem('hw-lang'); } catch (e) {}
+      if (lang === 'sl') document.documentElement.classList.add('lang-pending');
+      setTimeout(function () { document.documentElement.classList.remove('lang-pending'); }, 1500);
+    })();
+  </script>
+</head>
+<body>
+  <header class="nav is-scrolled">
+    <div class="wrap nav__inner">
+      <a class="brand" href="/" aria-label="HyperWare Solutions">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="7" fill="currentColor"/>
+          <path d="M9 9v14M23 9v14M9 16h14" stroke="var(--paper)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="23" cy="9" r="2.4" fill="var(--accent)"/>
+        </svg>
+        <span class="brand__name">HyperWare<span class="brand__sub">Solutions</span></span>
+      </a>
+      <div class="nav__end">
+        <div class="lang" role="group" aria-label="Language / Jezik">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true" lang="en" title="English">EN</button>
+          <button type="button" class="lang__btn" data-lang="sl" aria-pressed="false" lang="sl" title="Slovenščina">SL</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap notfound">
+      <p class="notfound__code" data-i18n="nf.code">Error 404</p>
+      <h1 data-i18n="nf.h">This page<br><em>does not exist</em>.</h1>
+      <p data-i18n="nf.p">The page you are looking for may have been moved or removed. Please return to the homepage or contact us at info@skerjanc.org.</p>
+      <div>
+        <a class="btn" href="/"><span data-i18n="nf.btn">Return to homepage</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <strong>HyperWare Solutions</strong>
+        <span>Nejc Škerjanc, s.p.</span>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="mailto:info@skerjanc.org">info@skerjanc.org</a>
+        <a href="/privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/i18n.js" defer></script>
+</body>
+</html>
