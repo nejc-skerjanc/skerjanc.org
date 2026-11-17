@@ -11,6 +11,15 @@ const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
+// "Back to top" and logo links: always scroll to the very top
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    history.replaceState(null, '', location.pathname + location.search);
+  });
+});
+
 // Mobile menu
 const toggle = document.querySelector('.nav__toggle');
 const menu = document.getElementById('mobile-menu');
