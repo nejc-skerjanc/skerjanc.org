@@ -1,0 +1,31 @@
+# HyperWare Solutions
+
+> HyperWare Solutions (legal name: HyperWare Solutions, Nejc Škerjanc, s.p.) is a software engineering company founded in 2019 by Nejc Škerjanc and headquartered in Kranj, Slovenia (EU). It designs, develops and maintains bespoke software systems for business clients across Europe, with remote services available. Communication in English and Slovenian.
+
+## Services
+
+- Bespoke software & web applications: internal tools, client portals, dashboards and business applications tailored to an organisation's processes.
+- System architecture & backend systems: design of APIs, databases and (micro)services built for reliability and growth.
+- System integration & automation: integration of ERP, CRM, payment and other third-party systems; automated data exchange.
+- Cloud services & DevOps: infrastructure, CI/CD, containers, monitoring, high availability and predictable costs.
+- System modernisation & technical consulting: code audits, refactoring, phased migration of legacy systems, independent technology advice.
+
+## Industries
+
+E-commerce, crypto & blockchain, fintech, healthcare, embedded systems, websites & web platforms.
+
+## Technologies
+
+C# / .NET, TypeScript, Python, Node.js, React, SQL, Docker, Azure, AWS, REST & GraphQL, Git & CI/CD, Solidity, Rust, Go, Ethereum / EVM, Web3 & ethers.js, Hardhat & Foundry.
+
+## How we work
+
+Four phases: Analysis (written scope and realistic estimate), Design (architecture, data model, interfaces), Development (short cycles, weekly demos, tested and reviewed code), Deployment & support (handover or long-term maintenance). Clients talk directly to the engineers, own 100% of the source code, infrastructure and documentation, with no vendor lock-in. Engagement models: project delivery, long-term partnership, strategic advisory.
+
+## Contact
+
+- General enquiries: info@skerjanc.org
+- Founder & CEO, Nejc Škerjanc: nejc@skerjanc.org
+- LinkedIn: https://www.linkedin.com/in/nejcskerjanc
+- Website: https://skerjanc.org/
+- Privacy policy: https://skerjanc.org/privacy.html
