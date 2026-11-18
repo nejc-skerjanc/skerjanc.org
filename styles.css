@@ -817,7 +817,11 @@ html[lang="sl"] .statement__text { max-width: 24ch; }
 
 .page { padding-block: clamp(64px, 9vw, 120px) var(--section-y); }
 .legal { max-width: 74ch; }
-.legal h1 {
+.legal h1,
+.legal .legal__title {
+  margin: 0;
+  font-weight: 400;
+  color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(44px, 6vw, 80px);
   line-height: 1;
