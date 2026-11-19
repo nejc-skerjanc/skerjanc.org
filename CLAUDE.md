@@ -62,11 +62,15 @@ Git-ignored source photos: `assets/116A5471*`, `assets/Gemini_Generated_Image_*`
 - Forwarding to Gmail is configured in Zoho (Settings → Mail Forwarding), not via DNS.
 - Don't remove the Zoho MX/SPF/verification TXT records or the Google verification TXT record.
 
+## Contact form
+
+- Powered by **Web3Forms** (free plan), key registered to `info@skerjanc.org`; it is the `access_key`
+  hidden input in `index.html`. The key is public by design (it can only send to that address).
+- To change the receiving address: create a new key at web3forms.com and replace the value.
+- Spam protection: hidden `botcheck` honeypot, time trap and random arithmetic security question (`script.js`).
+
 ## Open TODOs
 
-- [ ] **Contact form is not active yet**: `index.html` has `access_key` = `YOUR_WEB3FORMS_ACCESS_KEY`.
-      Get a free key at web3forms.com (for info@skerjanc.org) and paste it in. Until then the form shows an
-      error asking people to email directly.
 - [ ] Company registration numbers in footer are commented out (`Matična št.` / `ID za DDV`) — add when provided.
 - [ ] Optional: separate `/sl/` page with `hreflang` tags so Slovenian text gets indexed.
 
