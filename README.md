@@ -8,3 +8,7 @@ Static site (HTML/CSS/JS, no build step), hosted on GitHub Pages at https://sker
 - `i18n.js` — Slovenian translations and language switch
 - `styles.css`, `script.js` — styling and behaviour
 - `CNAME` — custom domain for GitHub Pages
+- `privacy.html`, `404.html` — privacy policy and not-found page
+- `robots.txt`, `sitemap.xml`, `llms.txt` — search engine and AI crawler files
+
+Deploy: push to `main`. Full maintenance manual: [`CLAUDE.md`](CLAUDE.md).
