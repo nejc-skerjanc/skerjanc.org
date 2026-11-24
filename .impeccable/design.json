@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T10:00:10+00:00",
+  "title": "Design System: HyperWare Solutions",
+  "extensions": {
+    "colorMeta": {
+      "rock": {
+        "role": "neutral",
+        "displayName": "Limestone",
+        "canonical": "oklch(91.9% 0.007 124.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242523",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a4a6a1",
+          "#c8cac6",
+          "#eeefec"
+        ]
+      },
+      "rock-2": {
+        "role": "neutral",
+        "displayName": "Weathered Stone",
+        "canonical": "oklch(87.8% 0.009 128.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242623",
+          "#41433e",
+          "#60625d",
+          "#81837e",
+          "#a3a6a0",
+          "#c8cac5",
+          "#edefec"
+        ]
+      },
+      "post": {
+        "role": "neutral",
+        "displayName": "Galvanised Post",
+        "canonical": "oklch(57.3% 0.012 145.4)",
+        "tonalRamp": [
+          "#0a0c0a",
+          "#232623",
+          "#3f433f",
+          "#5d635d",
+          "#7e847e",
+          "#a1a7a1",
+          "#c5cbc5",
+          "#ecf0ec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Spruce-Black Ink",
+        "canonical": "oklch(23.0% 0.022 158.5)",
+        "tonalRamp": [
+          "#090c0a",
+          "#202723",
+          "#3a453e",
+          "#57655d",
+          "#78877d",
+          "#9aa9a0",
+          "#c0cdc5",
+          "#e8f1eb"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "oklch(37.4% 0.020 159.7)",
+        "tonalRamp": [
+          "#090c0a",
+          "#202723",
+          "#3a453f",
+          "#58655d",
+          "#79867e",
+          "#9ba9a1",
+          "#c0cdc5",
+          "#e8f1ec"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Ink Faint",
+        "canonical": "oklch(45.8% 0.019 160.0)",
+        "tonalRamp": [
+          "#090c0a",
+          "#202723",
+          "#3b453f",
+          "#58655e",
+          "#79867e",
+          "#9ca9a1",
+          "#c1ccc6",
+          "#e9f1ec"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Path Rule",
+        "canonical": "oklch(74.7% 0.012 141.3)",
+        "tonalRamp": [
+          "#0a0c0a",
+          "#232623",
+          "#3f433e",
+          "#5e635d",
+          "#7e847e",
+          "#a1a7a0",
+          "#c6cbc5",
+          "#ecf0eb"
+        ]
+      },
+      "yellow": {
+        "role": "primary",
+        "displayName": "Signpost Enamel Yellow",
+        "canonical": "oklch(84.0% 0.172 90.4)",
+        "tonalRamp": [
+          "#150800",
+          "#381f00",
+          "#603900",
+          "#865800",
+          "#a97a00",
+          "#ce9e00",
+          "#edc447",
+          "#ffeca0"
+        ]
+      },
+      "yellow-2": {
+        "role": "primary",
+        "displayName": "Worn Enamel",
+        "canonical": "oklch(79.7% 0.163 89.5)",
+        "tonalRamp": [
+          "#140800",
+          "#382000",
+          "#603900",
+          "#855800",
+          "#a97a00",
+          "#cd9e00",
+          "#edc452",
+          "#ffeca4"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Trail Blaze Red",
+        "canonical": "oklch(52.3% 0.203 27.0)",
+        "tonalRamp": [
+          "#210000",
+          "#520000",
+          "#890000",
+          "#b90010",
+          "#e23d38",
+          "#ff655b",
+          "#ff988a",
+          "#ffd0c3"
+        ]
+      },
+      "red-2": {
+        "role": "secondary",
+        "displayName": "Deep Blaze",
+        "canonical": "oklch(46.1% 0.179 26.8)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4e0003",
+          "#820007",
+          "#b02121",
+          "#d84b44",
+          "#ff7166",
+          "#ffa093",
+          "#ffd4c9"
+        ]
+      },
+      "spruce": {
+        "role": "tertiary",
+        "displayName": "Spruce Forest",
+        "canonical": "oklch(32.1% 0.043 163.4)",
+        "tonalRamp": [
+          "#060d09",
+          "#192921",
+          "#2f483c",
+          "#4b695a",
+          "#6b8b7b",
+          "#8dae9e",
+          "#b5d1c3",
+          "#e0f4ea"
+        ]
+      },
+      "on-dark": {
+        "role": "tertiary",
+        "displayName": "Mist",
+        "canonical": "oklch(95.4% 0.007 132.4)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242523",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a3a6a1",
+          "#c7cac6",
+          "#edefec"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "tertiary",
+        "displayName": "Lichen",
+        "canonical": "oklch(82.5% 0.022 152.1)",
+        "tonalRamp": [
+          "#090c0a",
+          "#202722",
+          "#3b453d",
+          "#59655b",
+          "#79867c",
+          "#9ca99f",
+          "#c1cdc3",
+          "#e9f1ea"
+        ]
+      },
+      "on-dark-rule": {
+        "role": "tertiary",
+        "displayName": "Forest Rule",
+        "canonical": "oklch(44.0% 0.043 161.4)",
+        "tonalRamp": [
+          "#060d09",
+          "#192921",
+          "#30483c",
+          "#4c695a",
+          "#6c8b7a",
+          "#8eae9d",
+          "#b5d1c2",
+          "#e1f4e9"
+        ]
+      },
+      "enamel-white": {
+        "role": "neutral",
+        "displayName": "Enamel White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero title plate and 404 plate only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, condensed caps."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "The single sentence-case line in the spruce passage."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service names and route stops."
+      },
+      "plate": {
+        "displayName": "Plate",
+        "purpose": "Destination and enquiry plate lettering."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero lede at normal width."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text at normal width."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Primary navigation links."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Form buttons."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Keys, field labels, tags, location board."
+      }
+    },
+    "shadows": [
+      {
+        "name": "form-lift",
+        "value": "0 30px 60px -36px rgb(20 32 25 / 0.55)",
+        "purpose": "The form panel lying on the yellow contact board; the only shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every state and entrance transition."
+      },
+      {
+        "name": "plate-swing",
+        "value": "0.9s ease-out, staggered 90ms (+100ms)",
+        "purpose": "Plates swing out from the post once on load (clip-path reveal + 12px slide)."
+      },
+      {
+        "name": "plate-extend",
+        "value": "0.35s ease-out",
+        "purpose": "Plates and buttons extend their point on hover (padding-right grows)."
+      },
+      {
+        "name": "blaze-travel",
+        "value": "0.4s ease-out",
+        "purpose": "Nav blaze dot and trail ring change as the current section changes."
+      },
+      {
+        "name": "route-stop",
+        "value": "0.5s ease-out",
+        "purpose": "Route blazes colour and scale to 1.25 as the reader reaches each phase."
+      },
+      {
+        "name": "colour-hover",
+        "value": "0.2s",
+        "purpose": "Background and colour hover changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "600px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "narrow-desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "trail",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Destination Plate",
+      "kind": "custom",
+      "refersTo": "plate-destination",
+      "description": "Yellow arrow plate linking to a section, with its real count; extends on hover.",
+      "html": "<a class=\"ds-plate\" href=\"#\"><span>Services</span><span class=\"ds-plate__meta\">5 areas</span></a>",
+      "css": ".ds-plate{display:flex;align-items:center;justify-content:space-between;gap:16px;min-width:320px;background:var(--yellow,#f5c400);color:var(--ink,#142019);padding:15px 48px 15px 24px;clip-path:polygon(0 0,calc(100% - 26px) 0,100% 50%,calc(100% - 26px) 100%,0 100%);font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:72%;font-weight:800;text-transform:uppercase;letter-spacing:0.005em;font-size:24px;line-height:1;text-decoration:none;transition:background-color .2s,padding .35s cubic-bezier(0.16,1,0.3,1);}.ds-plate:hover{background:var(--yellow-2,#e6b600);padding-right:60px;}.ds-plate:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}.ds-plate__meta{font-stretch:85%;font-weight:600;font-size:.72em;letter-spacing:.02em;}"
+    },
+    {
+      "name": "Enquiry Plate",
+      "kind": "button",
+      "refersTo": "plate-enquiry",
+      "description": "The one red plate: the primary action, carrying an inverted blaze.",
+      "html": "<a class=\"ds-plate-go\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"11\" fill=\"#fff\"/><circle cx=\"12\" cy=\"12\" r=\"4.6\" fill=\"#c4161c\"/></svg><span>Submit an enquiry</span></a>",
+      "css": ".ds-plate-go{display:inline-flex;align-items:center;gap:16px;background:var(--red,#c4161c);color:#fff;padding:15px 48px 15px 24px;clip-path:polygon(0 0,calc(100% - 26px) 0,100% 50%,calc(100% - 26px) 100%,0 100%);font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:72%;font-weight:800;text-transform:uppercase;letter-spacing:0.005em;font-size:24px;line-height:1;text-decoration:none;transition:background-color .2s,padding .35s cubic-bezier(0.16,1,0.3,1);}.ds-plate-go:hover{background:var(--red-2,#a51117);padding-right:60px;}.ds-plate-go:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Red pointed submit button with trailing arrow; extends on hover.",
+      "html": "<button class=\"ds-btn-go\" type=\"button\"><span>Submit enquiry</span><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M4 10h11m-4-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-btn-go{display:inline-flex;align-items:center;gap:12px;background:var(--red,#c4161c);color:#fff;border:0;cursor:pointer;padding:16px 44px 16px 24px;clip-path:polygon(0 0,calc(100% - 26px) 0,100% 50%,calc(100% - 26px) 100%,0 100%);font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:80%;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;transition:background-color .2s,padding .35s cubic-bezier(0.16,1,0.3,1);}.ds-btn-go:hover{background:var(--red-2,#a51117);padding-right:52px;}.ds-btn-go:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Square white field with 2px ink border, red caret and yellow focus ring.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field__label\">Full name</span><input class=\"ds-input\" type=\"text\" placeholder=\"Nejc\"></label>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:320px;}.ds-field__label{font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:85%;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink,#142019);}.ds-input{font:inherit;font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-size:16px;color:var(--ink,#142019);background:#fff;border:2px solid var(--ink,#142019);border-radius:0;padding:12px 14px;caret-color:var(--red,#c4161c);transition:box-shadow .2s;}.ds-input::placeholder{color:var(--ink-faint,#4f5b54);}.ds-input:focus{outline:none;box-shadow:0 0 0 4px var(--yellow,#f5c400);}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Condensed caps links; the current one turns ink and gains the blaze dot.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Services</a><a href=\"#\" aria-current=\"location\">Industries</a><a href=\"#\">Approach</a><a href=\"#\">Contact us</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:30px;background:var(--rock,#e3e5e0);padding:24px;}.ds-nav a{display:inline-flex;align-items:center;gap:8px;font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:85%;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;color:var(--ink-soft,#38443d);transition:color .2s;}.ds-nav a::before{content:'';width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#fff 0 2.6px,var(--red,#c4161c) 3px);transform:scale(0);margin-left:-20px;transition:transform .4s cubic-bezier(0.16,1,0.3,1),margin .4s cubic-bezier(0.16,1,0.3,1);}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--ink,#142019);}.ds-nav a[aria-current]::before{transform:scale(1);margin-left:0;}.ds-nav a:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}"
+    },
+    {
+      "name": "Language Toggle",
+      "kind": "chip",
+      "refersTo": "lang-toggle-active",
+      "description": "Square EN/SL segmented toggle; active segment is ink with yellow lettering.",
+      "html": "<div class=\"ds-lang\"><button type=\"button\" aria-pressed=\"true\">EN</button><button type=\"button\" aria-pressed=\"false\">SL</button></div>",
+      "css": ".ds-lang{display:inline-flex;border:2px solid var(--ink,#142019);}.ds-lang button{font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:85%;font-weight:800;font-size:13px;letter-spacing:.06em;padding:6px 10px;border:0;background:transparent;color:var(--ink,#142019);cursor:pointer;}.ds-lang button:hover{background:var(--rock-2,#d5d8d2);}.ds-lang button[aria-pressed=true]{background:var(--ink,#142019);color:var(--yellow,#f5c400);}.ds-lang button:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}"
+    },
+    {
+      "name": "Service Register Row",
+      "kind": "card",
+      "refersTo": "tag",
+      "description": "A register row: condensed caps name, soft description, square ink-bordered tags.",
+      "html": "<div class=\"ds-reg\"><h3>System integration &amp; automation</h3><p>Integration of ERP, CRM and payment systems, eliminating manual data entry.</p><ul class=\"ds-tags\"><li>ERP / CRM</li><li>Data sync</li></ul></div>",
+      "css": ".ds-reg{display:grid;gap:10px;padding:24px 0;border-top:2px solid var(--ink,#142019);border-bottom:1px solid var(--rule,#a9afa8);background:var(--rock,#e3e5e0);color:var(--ink,#142019);max-width:560px;}.ds-reg h3{margin:0;font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:72%;font-weight:800;text-transform:uppercase;letter-spacing:0.005em;font-size:26px;line-height:1.02;}.ds-reg p{margin:0;font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-size:16px;line-height:1.6;color:var(--ink-soft,#38443d);}.ds-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;}.ds-tags li{font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:85%;font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;padding:5px 9px;border:1.5px solid var(--ink,#142019);}"
+    },
+    {
+      "name": "Trail Ring",
+      "kind": "custom",
+      "description": "Neutral post-grey ring on each section title; becomes the red blaze only when current.",
+      "html": "<div class=\"ds-trail\"><h2 class=\"ds-trail__t\">Services</h2><h2 class=\"ds-trail__t is-here\">Approach</h2></div>",
+      "css": ".ds-trail{position:relative;padding:16px 0 16px 48px;background:var(--rock,#e3e5e0);display:grid;gap:28px;}.ds-trail::before{content:'';position:absolute;top:0;bottom:0;left:21px;border-left:2px dashed var(--rule,#a9afa8);}.ds-trail__t{position:relative;margin:0;font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-stretch:72%;font-weight:800;text-transform:uppercase;letter-spacing:0.005em;font-size:40px;line-height:.98;color:var(--ink,#142019);}.ds-trail__t::before{content:'';position:absolute;left:-38px;top:.12em;width:22px;height:22px;box-sizing:border-box;border-radius:50%;border:5px solid var(--post,#747a74);background:var(--rock,#e3e5e0);transition:border-color .4s cubic-bezier(0.16,1,0.3,1),transform .4s cubic-bezier(0.16,1,0.3,1);}.ds-trail__t.is-here::before{border:0;background:radial-gradient(circle,#fff 0 4.4px,var(--red,#c4161c) 5px);transform:scale(1.1);}"
+    },
+    {
+      "name": "Link Box",
+      "kind": "button",
+      "refersTo": "link-box",
+      "description": "Ink-bordered external link with inline icon; fills yellow on hover.",
+      "html": "<a class=\"ds-ext\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M3.5 6.5h17v11h-17z M3.5 7l8.5 6.5L20.5 7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></svg><span>nejc@skerjanc.org</span></a>",
+      "css": ".ds-ext{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:2px solid var(--ink,#142019);color:var(--ink,#142019);font-family:var(--font,'Archivo','Arial Narrow',Arial,sans-serif);font-weight:600;font-size:15.5px;text-decoration:none;transition:background-color .2s;}.ds-ext:hover{background:var(--yellow,#f5c400);}.ds-ext:focus-visible{outline:3px solid var(--ink,#142019);outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Marked Trail",
+    "overview": "The site is a Slovenian mountain trail rendered as a page. The visitor arrives at a signpost: a galvanised grey post carrying a large arrow-pointed yellow enamel plate with the headline, destination plates beneath it with real counts, and one red plate that is the way to the enquiry. From there a single dashed trail line runs down the page, every section hangs from it by a ring, and the Knafelc blaze (a red disc with a white centre) marks only where you are now. Working with the business should feel like walking a well-marked route: always legible, never lost, never sold to.\n\nThe ground is cool limestone grey, the ink is spruce-black, and colour is spent like real signage spends it: yellow owns large plates and the whole contact field, deep spruce green carries the one quiet passage, red appears only for position and the primary action. Density is calm and register-like; content sits in ruled lists (services, industries, principles, facts) rather than tiles. One family, Archivo, does everything: condensed heavy caps for anything that would be lettered on a sign, normal-width sentence case for anything that is read.\n\nThe world refuses the cream-and-serif-italic agency brochure: no eyebrow labels over headings, no coloured keyword highlights inside headlines, no metric strips, no trios of rounded cards.",
+    "keyCharacteristics": [
+      "Arrow-pointed plates (clip-path point, 26px) bolted to a grey post; the signature silhouette.",
+      "Red reserved for \"you are here\" and the primary enquiry action.",
+      "One dashed trail line per page with a neutral ring per section that turns into the red blaze only when that section is current.",
+      "Archivo variable: 72% width, 800 weight, uppercase for signpost lettering; 100% width, 400 for reading.",
+      "Square corners everywhere; borders of 2px ink for structure, 1px rule for list dividers.",
+      "Flat enamel surfaces; depth comes from colour fields, not shadows."
+    ],
+    "rules": [
+      {
+        "name": "The Blaze Rule",
+        "body": "Red marks position or the one primary action, nothing else: the current nav item, the current section ring, the current route stop, the enquiry plate and the submit button (plus error states and the caret, which are also \"attend here\"). Never use red for decoration, emphasis or a second CTA.",
+        "section": "colors"
+      },
+      {
+        "name": "The Enamel Rule",
+        "body": "Yellow is applied as a whole field (a plate or a full section), never as a thin accent stripe, underline or highlighted word.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signpost Lettering Rule",
+        "body": "Anything that would be painted on a sign (plates, section titles, item names, labels) is condensed uppercase Archivo; anything that is read as sentences stays normal width, sentence case. Never introduce a second family, a serif or italics (`em` is set upright and carries no colour).",
+        "section": "typography"
+      },
+      {
+        "name": "The Size Carries Importance Rule",
+        "body": "The scale is steep: hierarchy comes from size and width, not from colour accents or kicker labels above headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Enamel Rule",
+        "body": "Nothing floats except the one form panel on the contact board. Plates, cards and buttons carry no shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do letter every plate, section title and item name in Archivo 800 at 72% width, uppercase.",
+      "Do point plates and buttons with the shared arrow clip-path (26px point, 20px on phones).",
+      "Do spend yellow as whole plates and fields; spend red only on the current position and the single primary action.",
+      "Do keep trail rings neutral (Galvanised Post stroke, limestone centre) and let only the current section turn red.",
+      "Do organise content as ruled registers: 2px ink rule on top, 1px rule between rows, a fixed uppercase key column.",
+      "Do keep corners square and surfaces flat; the contact form panel is the only shadowed surface."
+    ],
+    "donts": [
+      "Don't add eyebrow or kicker labels above headings.",
+      "Don't colour or highlight individual keywords inside headlines; `em` stays upright and uncoloured.",
+      "Don't build card trios, metric strips or rounded tiles; use registers and plates.",
+      "Don't use red for decoration, a secondary action, or more than one \"you are here\" at a time.",
+      "Don't introduce a second typeface, a serif, or italics.",
+      "Don't round corners or add shadows to plates, buttons or inputs."
+    ]
+  }
+}

@@ -417,7 +417,7 @@ html[lang="sl"] .plate--title { font-size: clamp(34px, 5vw, 76px); width: min(10
   }
   /* Only the section you are in carries the red blaze */
   .trail.is-here .section__title::before,
-  .trail.is-here .contact__title::before {
+  .contact.trail.is-here .contact__title::before {
     border: 0;
     background: radial-gradient(circle, #fff 0 4.4px, var(--red) 5px);
     transform: scale(1.1);
