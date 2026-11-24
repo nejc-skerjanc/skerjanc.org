@@ -33,7 +33,7 @@ const STRINGS = {
 
     'hero.title': 'Programska oprema,<br>zasnovana za <em>trajnost</em>.',
     'hero.lede': 'HyperWare Solutions načrtuje, razvija in vzdržuje programske sisteme po meri — od zaledne arhitekture in sistemskih integracij do poslovnih aplikacij, ki jih vaši zaposleni uporabljajo pri vsakodnevnem delu. Naše rešitve odlikujejo premišljena zasnova, kakovostna koda in dolgoročno zanesljivo delovanje.',
-    'hero.cta': 'Pošljite povpraševanje',
+    'hero.cta': 'Pošlji povpraševanje',
     'dest.aria': 'Na tej strani',
     'plate.services': '5 področij',
     'plate.industries': '6 panog',
