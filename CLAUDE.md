@@ -22,6 +22,7 @@ Read this before changing anything.
 | `privacy.html` | Privacy policy — EN and SL versions both in the file (`data-only="en"` / `data-only="sl"`) |
 | `404.html` | Not-found page (`noindex`; uses absolute `/` paths because it's served at any URL) |
 | `assets/` | `nejc.jpg/.webp` (photo), `share.png` (1200×630 social image), `favicon.svg`, self-hosted `fonts/` |
+| `favicon.ico`, `assets/favicon-*.png`, `assets/icon-*.png`, `assets/apple-touch-icon.png` | PNG/ICO versions of `favicon.svg` (Google search results need a raster favicon at the root). If the logo changes, regenerate all of them. |
 | `robots.txt` | Allows all crawlers incl. AI bots (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…) |
 | `sitemap.xml` | Lists `/` and `/privacy.html` |
 | `llms.txt` | Plain-text company summary for AI assistants |
@@ -44,7 +45,7 @@ Git-ignored source photos: `assets/116A5471*`, `assets/Gemini_Generated_Image_*`
 - **Exactly one `<h1>` per page** (Bing flagged duplicates). On `privacy.html` the Slovenian title is
   `<p class="legal__title" role="heading" aria-level="1">`, not an `<h1>`.
 - `index.html` `<head>` has title, description, canonical, Open Graph and **JSON-LD** (`ProfessionalService`
-  with services in `hasOfferCatalog`). Keep the JSON-LD valid JSON.
+  with services in `hasOfferCatalog`, `logo` = `assets/icon-512.png`). Keep the JSON-LD valid JSON.
 - When content changes (services, industries, tech, contacts), also update:
   1. `llms.txt`
   2. the JSON-LD in `index.html`
