@@ -31,14 +31,15 @@ const STRINGS = {
     'nav.about': 'O nas',
     'nav.cta': 'Povpraševanje',
 
-    'hero.eyebrow': 'Razvoj programske opreme · Slovenija',
     'hero.title': 'Programska oprema,<br>zasnovana za <em>trajnost</em>.',
     'hero.lede': 'HyperWare Solutions načrtuje, razvija in vzdržuje programske sisteme po meri — od zaledne arhitekture in sistemskih integracij do poslovnih aplikacij, ki jih vaši zaposleni uporabljajo pri vsakodnevnem delu. Naše rešitve odlikujejo premišljena zasnova, kakovostna koda in dolgoročno zanesljivo delovanje.',
     'hero.cta': 'Pošljite povpraševanje',
-    'hero.link': 'Pregled storitev',
+    'dest.aria': 'Na tej strani',
+    'plate.services': '5 področij',
+    'plate.industries': '6 panog',
+    'plate.approach': '4 faze',
+    'plate.loc': 'Kranj · 386 m · od leta 2019',
 
-    'spec.aria': 'Osnovni podatki',
-    'spec.since.k': 'Ustanovljeno',
     'spec.focus.k': 'Dejavnost',
     'spec.focus.v': 'Razvoj programske opreme in informacijskih sistemov',
     'spec.eng.k': 'Sodelovanje',
@@ -46,7 +47,6 @@ const STRINGS = {
     'spec.loc.k': 'Sedež',
     'spec.loc.v': 'Kranj, Slovenija, EU — storitve tudi na daljavo',
 
-    'services.eyebrow': 'Storitve',
     'services.title': 'En izvajalec,<br>odgovoren za <em>celoten</em> sistem.',
     'services.intro': 'Brez prenašanja odgovornosti med različnimi agencijami in zunanjimi izvajalci. Sodelujete neposredno s strokovnjaki, ki vašo programsko opremo načrtujejo, razvijajo in vzdržujejo.',
 
@@ -78,13 +78,7 @@ const STRINGS = {
     's5.t2': 'Migracija',
     's5.t3': 'Svetovanje',
 
-    'fig.aria': 'Ključni podatki',
-    'fig.years': 'Let delovanja',
-    'fig.services': 'Področij storitev',
-    'fig.industries': 'Panog',
-    'fig.ownership': 'Lastništvo izvorne kode',
 
-    'ind.eyebrow': 'Panoge',
     'ind.title': 'Izkušnje v <em>zahtevnih</em><br>panogah.',
     'ind.intro': 'Poznamo specifične zahteve, predpise in tveganja panog, v katerih delujejo naši naročniki.',
     'i1.h': 'E-trgovina',
@@ -102,10 +96,8 @@ const STRINGS = {
 
     'statement': 'Kakovostna programska oprema deluje <em>neopazno</em> — zanesljivo, prilagodljivo in brez posredovanja ob&nbsp;dveh zjutraj.',
 
-    'approach.eyebrow': 'Pristop',
     'approach.title': 'Jasna pot od zamisli<br>do <em>delujočega</em> sistema.',
     'approach.intro': 'Vsak projekt poteka po preverjenem in preglednem postopku. V vsaki fazi so vam jasni cilji, razlogi in naslednji koraki.',
-    'phase': 'Faza',
     'p1.h': 'Analiza',
     'p1.p': 'Opredelimo poslovne cilje, omejitve in obstoječe sisteme. Prejmete pisno opredelitev obsega del in realno oceno stroškov.',
     'p2.h': 'Zasnova',
@@ -122,18 +114,15 @@ const STRINGS = {
     'pr3.h': 'Dolgoročna vzdržljivost',
     'pr3.p': 'Pregledna koda, avtomatizirano testiranje in premišljene tehnološke odločitve zagotavljajo, da sistem ostane vzdrževan še vrsto let.',
 
-    'stack.aria': 'Tehnologije',
     'stack.label': 'Tehnologije',
 
     'about.role': 'Ustanovitelj in direktor',
-    'about.eyebrow': 'O nas',
     'about.title': 'Strokovnost in <em>odgovornost</em>.',
     'about.p1': 'Podjetje HyperWare Solutions je leta 2019 ustanovil Nejc Škerjanc. Naročnikom zagotavljamo izkušeno razvojno ekipo, ki prevzame celovito odgovornost za sistem — od prvega posveta do dolgoletnega zanesljivega delovanja.',
     'about.p2': 'Delujemo na stičišču poslovnih procesov in tehnologije. Razvijamo programsko opremo za podporo poslovanju, povezujemo med seboj nepovezane sisteme in vzpostavljamo red v obstoječih programskih rešitvah.',
     'about.p3': 'Zavezani smo kakovostni izvedbi: jasni arhitekturi, realnim ocenam in pregledni kodi, ki olajša nadaljnji razvoj.',
     'about.linkedin': 'Profil Nejca Škerjanca na LinkedInu',
 
-    'contact.eyebrow': 'Kontakt',
     'contact.title': 'Načrtujete nov<br>sistem? <em>Pišite nam.</em>',
     'contact.lede': 'Na kratko opišite svoje potrebe. Odgovorili vam bomo z dodatnimi vprašanji, predlogi ali povabilom na uvodni sestanek.',
     'contact.email': 'Splošno',

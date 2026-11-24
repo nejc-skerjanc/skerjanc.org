@@ -18,10 +18,10 @@ Read this before changing anything.
 | `index.html` | Homepage: structure + all **English** text (English is the default language) |
 | `i18n.js` | **Slovenian** strings + language switcher, plus a few English strings used from JS |
 | `script.js` | Menu, scroll reveal, contact form (Web3Forms) + security question |
-| `styles.css` | All styling; colours are CSS variables (`--ink`, `--paper`, `--accent`, …) |
+| `styles.css` | All styling; colours are CSS variables (`--rock`, `--ink`, `--yellow`, `--red`, `--spruce`, …) |
 | `privacy.html` | Privacy policy — EN and SL versions both in the file (`data-only="en"` / `data-only="sl"`) |
 | `404.html` | Not-found page (`noindex`; uses absolute `/` paths because it's served at any URL) |
-| `assets/` | `nejc.jpg/.webp` (photo), `share.png` (1200×630 social image), `favicon.svg`, self-hosted `fonts/` |
+| `assets/` | `nejc.jpg/.webp` (photo), `share.png` (1200×630 social image), `favicon.svg`, self-hosted `fonts/` (Archivo variable, weight 100–900, width 62–125%) |
 | `favicon.ico`, `assets/favicon-*.png`, `assets/icon-*.png`, `assets/apple-touch-icon.png` | PNG/ICO versions of `favicon.svg` (Google search results need a raster favicon at the root). If the logo changes, regenerate all of them. |
 | `robots.txt` | Allows all crawlers incl. AI bots (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…) |
 | `sitemap.xml` | Lists `/` and `/privacy.html` |
@@ -29,6 +29,24 @@ Read this before changing anything.
 | `.preview/` | Local screenshots/test files — git-ignored, not published |
 
 Git-ignored source photos: `assets/116A5471*`, `assets/Gemini_Generated_Image_*` (originals, not published).
+
+## Design ("The Marked Trail")
+
+Chosen with the Impeccable design skill (Nov 2026) to replace the earlier generic, AI-looking style
+(cream + italic serif + eyebrow labels). Based on Slovenian mountain-trail signage.
+
+- **Colours:** limestone ground `--rock`, signpost yellow `--yellow` (plates, the contact section),
+  spruce-black `--ink`, forest `--spruce` (statement band). **Red `--red` = the trail blaze, reserved
+  for "you are here" and the primary action** (active nav item, current approach phase, enquiry buttons).
+  Don't use red for decoration.
+- **Type:** one family, Archivo. Signpost lettering = `font-stretch: 72–85%`, weight 800, uppercase.
+  Reading text = normal width, weight 400.
+- **Plates:** `.plate` = yellow arrow sign (clip-path with `--point`). The hero is a signpost: the
+  title plate, destination plates (working links) and the red enquiry plate.
+- **Trail:** sections with class `trail` get a dashed line and a red-and-white blaze at the heading (≥1100px).
+- **Don't reintroduce:** small uppercase labels above headings, 01/02 section numbers, metric strips,
+  italic serif headlines, cream backgrounds.
+- Impeccable files: `PRODUCT.md` (product facts), `.impeccable/surfaces/index-html.md` (direction contract).
 
 ## How translations work (important)
 

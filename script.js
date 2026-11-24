@@ -36,22 +36,43 @@ document.addEventListener('langchange', () => {
 menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
 window.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 
-// Reveal on scroll (staggered within each parent)
-const reveals = document.querySelectorAll('.reveal');
+// The trail blaze: marks the section you are in (nav) and the phase you are reading (route)
 if ('IntersectionObserver' in window) {
-  const io = new IntersectionObserver((entries) => {
+  const navLinks = [...document.querySelectorAll('.nav__links a[href^="#"]')];
+  const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const spy = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const siblings = [...el.parentElement.children].filter((c) => c.classList.contains('reveal'));
-      el.style.setProperty('--d', `${Math.min(siblings.indexOf(el), 5) * 80}ms`);
-      el.classList.add('is-in');
-      io.unobserve(el);
+      navLinks.forEach((a) => {
+        if (a.getAttribute('href') === `#${entry.target.id}`) a.setAttribute('aria-current', 'location');
+        else a.removeAttribute('aria-current');
+      });
+      sections.forEach((s) => s.classList.toggle('is-here', s === entry.target));
     });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-  reveals.forEach((el) => io.observe(el));
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach((s) => spy.observe(s));
+  // Clear the marker when back at the signpost
+  const hero = document.querySelector('.hero');
+  if (hero) new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    navLinks.forEach((a) => a.removeAttribute('aria-current'));
+    sections.forEach((s) => s.classList.remove('is-here'));
+  }, { rootMargin: '-45% 0px -50% 0px' }).observe(hero);
+
+  const stops = [...document.querySelectorAll('.stop')];
+  const route = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const idx = stops.indexOf(entry.target);
+      stops.forEach((s, i) => {
+        s.classList.toggle('is-current', i === idx);
+        s.classList.toggle('is-passed', i < idx);
+      });
+    });
+  }, { rootMargin: '-35% 0px -45% 0px' });
+  stops.forEach((s) => route.observe(s));
 } else {
-  reveals.forEach((el) => el.classList.add('is-in'));
+  document.documentElement.classList.add('no-io');
 }
 
 // Contact form (Web3Forms)
